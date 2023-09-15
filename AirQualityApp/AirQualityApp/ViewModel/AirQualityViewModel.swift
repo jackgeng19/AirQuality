@@ -12,9 +12,8 @@ class AirQualityViewModel: ObservableObject {
     @Published var airQualityList = AirQualityList()
     private var service = AirQualityService()
 
-
-    func fetchNearestCityAirQuality() {
-        service.getNearestCityAirQuality { [weak self] (quality, error) in
+    func fetchCityAirQuality(state: String, city: String) {
+        service.getCityAirQuality(state: state, city: city) { [weak self] (quality, error) in
             DispatchQueue.main.async {
                 if let quality = quality {
                     self?.airQuality = quality

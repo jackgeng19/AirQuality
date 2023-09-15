@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct CityView: View {
-    
     @ObservedObject var viewModel: AirQualityViewModel
-    
+    var state: String
+    var city: String
+
     var body: some View {
         VStack {
             if let quality = viewModel.airQuality {
@@ -23,15 +24,18 @@ struct CityView: View {
             }
         }
         .onAppear {
-            viewModel.fetchNearestCityAirQuality()
+            viewModel.fetchCityAirQuality(state: state, city: city)
         }
     }
 }
 
 struct CityView_Previews: PreviewProvider {
     static var previews: some View {
-        var viewModel = AirQualityViewModel()
-        viewModel.airQuality = AirQuality.example
-        return CityView(viewModel: viewModel)
+        let viewModel = AirQualityViewModel()
+        viewModel.fetchCityAirQuality(state: "California", city: "Los Angeles") // Example state and city
+        
+        return NavigationView {
+            CityView(viewModel: viewModel, state: "California", city: "San Diego")
+        }
     }
 }
