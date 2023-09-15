@@ -11,19 +11,7 @@ class AirQualityViewModel: ObservableObject {
     @Published var airQuality: AirQuality?
     @Published var airQualityList = AirQualityList()
     private var service = AirQualityService()
-    @Published var states: [String] = []
-    @Published var cities: [String] = []
-    var statesAndCities: [String: [String]] = [:]
-    
-    init() {
-        if let fetchedStatesAndCities = LocationService().fetchUSStatesAndCities() {
-            self.statesAndCities = fetchedStatesAndCities
-            self.states = Array(fetchedStatesAndCities.keys).sorted()
-            if let firstState = states.first {
-                self.cities = fetchedStatesAndCities[firstState] ?? []
-            }
-        }
-    }
+
 
     func fetchNearestCityAirQuality() {
         service.getNearestCityAirQuality { [weak self] (quality, error) in

@@ -15,9 +15,10 @@
 		4F7CAECC2AB3950A0096F388 /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CAECB2AB3950A0096F388 /* AirQuality.swift */; };
 		4F7CAED12AB398BA0096F388 /* AirQualityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CAED02AB398BA0096F388 /* AirQualityService.swift */; };
 		4F7CAED32AB399010096F388 /* AirQualityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CAED22AB399010096F388 /* AirQualityViewModel.swift */; };
-		4F7CAED72AB3A20C0096F388 /* US_States_and_Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7CAED62AB3A20B0096F388 /* US_States_and_Cities.json */; };
+		4F7CAED72AB3A20C0096F388 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F7CAED62AB3A20B0096F388 /* cities.json */; };
 		4F7CAED92AB3A2CC0096F388 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CAED82AB3A2CC0096F388 /* LocationService.swift */; };
-		4F7CAEDB2AB3A3850096F388 /* StateCitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CAEDA2AB3A3850096F388 /* StateCitySelectionView.swift */; };
+		4FE3C5F82AB3F3DC00955FF9 /* LocationSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3C5F72AB3F3DC00955FF9 /* LocationSwift.swift */; };
+		4FE3C5FA2AB3F41C00955FF9 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3C5F92AB3F41C00955FF9 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,10 @@
 		4F7CAECB2AB3950A0096F388 /* AirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQuality.swift; sourceTree = "<group>"; };
 		4F7CAED02AB398BA0096F388 /* AirQualityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityService.swift; sourceTree = "<group>"; };
 		4F7CAED22AB399010096F388 /* AirQualityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityViewModel.swift; sourceTree = "<group>"; };
-		4F7CAED62AB3A20B0096F388 /* US_States_and_Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = US_States_and_Cities.json; sourceTree = "<group>"; };
+		4F7CAED62AB3A20B0096F388 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		4F7CAED82AB3A2CC0096F388 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		4F7CAEDA2AB3A3850096F388 /* StateCitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCitySelectionView.swift; sourceTree = "<group>"; };
+		4FE3C5F72AB3F3DC00955FF9 /* LocationSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSwift.swift; sourceTree = "<group>"; };
+		4FE3C5F92AB3F41C00955FF9 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +91,9 @@
 		4F7CAEC62AB390EF0096F388 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4F7CAED62AB3A20B0096F388 /* cities.json */,
 				4F7CAEB92AB390A90096F388 /* ContentView.swift */,
 				4F7CAEC92AB3914C0096F388 /* CityView.swift */,
-				4F7CAEDA2AB3A3850096F388 /* StateCitySelectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7CAED22AB399010096F388 /* AirQualityViewModel.swift */,
+				4FE3C5F92AB3F41C00955FF9 /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7CAECB2AB3950A0096F388 /* AirQuality.swift */,
+				4FE3C5F72AB3F3DC00955FF9 /* LocationSwift.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				4F7CAED02AB398BA0096F388 /* AirQualityService.swift */,
-				4F7CAED62AB3A20B0096F388 /* US_States_and_Cities.json */,
 				4F7CAED82AB3A2CC0096F388 /* LocationService.swift */,
 			);
 			path = Service;
@@ -181,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F7CAEC02AB390AB0096F388 /* Preview Assets.xcassets in Resources */,
-				4F7CAED72AB3A20C0096F388 /* US_States_and_Cities.json in Resources */,
+				4F7CAED72AB3A20C0096F388 /* cities.json in Resources */,
 				4F7CAEBC2AB390AB0096F388 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,10 +199,11 @@
 				4F7CAED12AB398BA0096F388 /* AirQualityService.swift in Sources */,
 				4F7CAECC2AB3950A0096F388 /* AirQuality.swift in Sources */,
 				4F7CAED92AB3A2CC0096F388 /* LocationService.swift in Sources */,
+				4FE3C5FA2AB3F41C00955FF9 /* LocationViewModel.swift in Sources */,
 				4F7CAEBA2AB390A90096F388 /* ContentView.swift in Sources */,
 				4F7CAED32AB399010096F388 /* AirQualityViewModel.swift in Sources */,
+				4FE3C5F82AB3F3DC00955FF9 /* LocationSwift.swift in Sources */,
 				4F7CAECA2AB3914C0096F388 /* CityView.swift in Sources */,
-				4F7CAEDB2AB3A3850096F388 /* StateCitySelectionView.swift in Sources */,
 				4F7CAEB82AB390A90096F388 /* AirQualityAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,7 @@ struct CityView: View {
 
 struct CityView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = AirQualityViewModel()
+        var viewModel = AirQualityViewModel()
         viewModel.airQuality = AirQuality.example
         return CityView(viewModel: viewModel)
     }

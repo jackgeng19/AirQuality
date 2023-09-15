@@ -63,7 +63,7 @@ extension AirQuality {
                 current: CurrentData(
                     pollution: PollutionData(
                         ts: "2023-09-14T18:00:00.000Z",
-                        aqius: 27,
+                        aqius: 29,
                         mainus: "p2",
                         aqicn: 9,
                         mainxcn: "p2"
